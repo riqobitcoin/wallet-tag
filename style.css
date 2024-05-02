@@ -1,0 +1,77 @@
+html, body {
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  background: #000000;
+ }
+
+
+input::placeholder {
+  font: 16px/26px "Raleway", consolas; 
+ 
+  color: rgba(255, 255, 255, 0.648);
+  font-size: 1em;
+  font-style: italic;
+}
+.logo { 
+   h1 {text-align: center; 
+    color: #cdcdcdcd; 
+    font-family: Consolas, monaco, monospace; 
+    font-size: 63px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; }
+}
+.content{  color:#fff ;
+  font-family: Consolas, monaco, monospace;
+  font-size: 14px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 20px;
+
+}
+.homebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.1);
+  width: 1088px;
+  height: 588px;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.box {
+ 
+  bottom: -6%;
+  position: relative;
+  width: 800px;
+  font-family: consolas;
+  color:#fff;
+  padding: 60px;
+  left: 5%;
+  background: rgba(0, 0, 0, 0.438);
+ 
+  height: 350px;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  
+}
+
+.input-box {
+  width: 300px;
+  height: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(66, 66, 66, 0.418);
+  color: white;
+  position: static   ;
+}
+
+

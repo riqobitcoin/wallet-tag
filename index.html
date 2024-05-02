@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Wallet Tag</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="homebox">
+
+  <div class="logo"> 
+  <h1>Wallet Tag Module</h1>
+  </div>
+  
+  <div class="box">
+   
+    <h1>Wallet Tag</h1>
+       <!--  <label for="text">Enter Text:</label><br>-->
+        <input type="text" id="text" name="text"  oninput="validateInput()" 
+        placeholder="1Lbcfr7s****" 
+        style="width:390px;
+        height: 40px;  
+        color:#66ff00;
+        background-color:#6464644b; 
+        border: none; 
+        opacity: 0,5;
+        font-style: italic;">
+        
+        <br><br>
+        <h3>Address | Tag</h3>
+        <div id="result" style="color: #00d9ff; font-size: 22px;"><h2 style="color: rgb(6, 253, 212);">XXXXX | 0000</h2>     </div>
+        <!DOCTYPE html>
+<html>
+    <body>
+
+        
+
+    </body>
+</html>
+        <div id="text"></div>
+        <script>
+            function encryptText(text) {
+                var hash = CryptoJS.SHA256(text);
+                var encryptedText = hash.toString(CryptoJS.enc.Hex);
+                var result = encryptedText.substring(0, 2) + encryptedText.substring(encryptedText.length - 2);
+                document.getElementById('result').innerText = text + ' | ' + result;
+                document.getElementById('text').innerText = text;
+                
+            }
+  
+            function validateInput() {
+                var text = document.getElementById('text').value;
+                // Remove special characters and spaces
+                text = text.replace(/[^\w]/g, '');
+                // Ensure minimum length is 32 characters
+                if (text.length >= 32) {
+                    encryptText(text);
+                } else {
+                    document.getElementById('result').innerText = 'Enter a valid wallet';
+                }
+            }
+        </script>
+
+    <!-- Include CryptoJS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+  
+
+  
+<br>
+<br>
+<br>
+<br>
+    <footer>
+      <p>Author: RIQO <br>
+      <a href="mailto:riqo@gmx.com">riqo@gmx.com</a></p>
+    </footer>
+
+  </div>
+  <div class="content"> 
+
+    
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+   
+</div>
+
+<div id="particles-js"></div>
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
